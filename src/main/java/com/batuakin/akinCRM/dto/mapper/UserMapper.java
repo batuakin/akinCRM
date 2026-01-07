@@ -3,11 +3,12 @@ package com.batuakin.akinCRM.dto.mapper;
 import com.batuakin.akinCRM.dto.UserResponse;
 import com.batuakin.akinCRM.dto.UserSaveRequest;
 import com.batuakin.akinCRM.entity.UserEntity;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
 public class UserMapper {
-
 
     // Request to Entity
     public UserEntity requestToEntity(UserSaveRequest request){
@@ -42,7 +43,4 @@ public class UserMapper {
                 entity.getRole()
         );
     }
-
-
-
 }
